@@ -17,57 +17,57 @@ This is a simple college management system created using Java and Spring Boot. T
 
 ## Database Schema
 
-Student
+### Student
 - id 
 - name 
 
-Professor
+### Professor
 - id 
 - title
 
-Subject
+### Subject
 - id
 - title
 - professor_id
 
-AdmissionRecord
+### AdmissionRecord
 - id
 - fees
 - student_id
 
-Student Professor
+### Student Professor
 - student_id
 - professor_id
 
-Subject Student
+### Subject Student
 - subject_id
 - student_id
 
 
 ## API Endpoints
 ### Students
-`GET /students` - Get all students
-`POST /students` - Add a student
-`GET /students/{id}` - Get student by id
-`PUT /students/{studentId}/subjects/{subjectId}` - Assign subject to student
+- `GET /students` - Get all students
+- `POST /students` - Add a student
+- `GET /students/{id}` - Get student by id
+- `PUT /students/{studentId}/subjects/{subjectId}` - Assign subject to student
 
 ### Subjects
-`GET /subjects` - Get all subjects
-`POST /subjects` - Add a subject
-`GET /subjects/{id}` - Get subject by id
-`PUT /subjects/{subjectId}/professors/{professorId}` - Assign professor to subject
+- `GET /subjects` - Get all subjects
+- `POST /subjects` - Add a subject
+- `GET /subjects/{id}` - Get subject by id
+- `PUT /subjects/{subjectId}/professors/{professorId}` - Assign professor to subject
 
 ### Professors
-`GET /professors` - Get all professors
-`POST /`professors - Add a professor
-`GET /professors/{id}` - Get professor by id
-`PUT /professors/{professorId}/students/{studentId}` - Assign student to professor
+- `GET /professors` - Get all professors
+- `POST /`professors - Add a professor
+- `GET /professors/{id}` - Get professor by id
+- `PUT /professors/{professorId}/students/{studentId}` - Assign student to professor
 
 ### Admissions
-`GET /admission` - Get all admission records
-`POST /admission` - Add an admission record
-`GET /admission/{id}` - Get admission record by id
-`PUT /admission/{admissionId}/students/{studentId}` - Assign student to admission record
+- `GET /admission` - Get all admission records
+- `POST /admission` - Add an admission record
+- `GET /admission/{id}` - Get admission record by id
+- `PUT /admission/{admissionId}/students/{studentId}` - Assign student to admission record
 
 ## How to Run
 1. Clone the repository
